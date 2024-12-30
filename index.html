@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD MEHEDI HASAN | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background: url('banner.png') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      color: white;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header .logo {
+      z-index: 2;
+    }
+    header .logo img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    nav {
+      z-index: 2;
+    }
+    .nav-btn {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .nav-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    header .nav-buttons .follow-me-btn {
+      cursor: pointer;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+
+
+  
+
+
+    footer {
+      background: #040208;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+  
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+    }
+    .footer-logo img {
+      max-width: 100px;
+      border-radius: 100px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #00bfff;
+    }
+    i {
+      margin-right: 10px;
+    }
+    .social-icons a {
+      margin: 0 5px;
+      font-size: 20px;
+      color: white;
+    }
+    .social-icons a:hover {
+      color: #00bfff;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid hsl(0, 91%, 44%);
+    }
+
+    /* Highlight effect for the Follow Me section */
+    .highlight {
+      border: 2px solid #00bfff;
+      background-color: #492c2c;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logoo.jpg" alt="MD MEHEDI HASAN Logo">
+    </div>
+    <nav class="d-flex justify-content-end align-items-center flex-wrap">
+      <a href="about.html" class="btn btn-light mx-2 nav-btn">About Me</a>
+      <a href="journal.html" class="btn btn-light mx-2 nav-btn">My Journal</a>
+      <a href="gallery.html" class="btn btn-light mx-2 nav-btn">Photo Gallery</a>
+      <a href="education.html" class="btn btn-light mx-2 nav-btn">Educational Life</a>
+      <a href="passion.html" class="btn btn-light mx-2 nav-btn">Passion</a>
+      <a href="projects.html" class="btn btn-light mx-2 nav-btn">My Project</a>
+      <a href="wiki.html" class="btn btn-light mx-2 nav-btn">Wiki</a>
+      <a href="#footer-follow-me" class="btn btn-light mx-2 nav-btn follow-me-btn">Follow Me</a>
+    </nav>
+  </header>
+
+  <!-- Body -->
+  <section>
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is the home page of my personal portfolio. Navigate using the buttons above to explore more!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Top Row: 3 Equal Divisions -->
+    <div class="footer-row">
+      <!-- Left Section: Contact Me -->
+      <div class="footer-section contact-info">
+        <h5>Contact Me</h5>
+        <p><i class="fas fa-phone"></i> 01727-393466</p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:mehedi.birat@gmail.com">mehedi.birat@gmail.com</a>
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:hasan22205101432@diu.edu.bd?subject=Daffodillian%20Only">
+            hasan22205101432@diu.edu.bd (Daffodillian Only)
+          </a>
+        </p>
+      </div>
+
+      <!-- Middle Section: Logo -->
+      <div class="footer-section footer-logo">
+        <img src="pic.jpg" alt="Portfolio Logo">
+      </div>
+
+      <!-- Right Section: Follow Me -->
+      <div id="footer-follow-me" class="footer-section follow-me">
+        <h5>Follow Me</h5>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://x.com/yourprofile" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row: Single Line -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 MD MEHEDI HASAN. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for Scroll Highlight -->
+  <script>
+    // Scroll and Highlight Follow Me in footer when the button in the header is clicked
+    document.querySelector('.follow-me-btn').addEventListener('click', function () {
+      const footerFollowMe = document.getElementById('footer-follow-me');
+      footerFollowMe.scrollIntoView({ behavior: 'smooth' });
+      
+      // Highlight the Follow Me section
+      footerFollowMe.classList.add('highlight');
+      
+      // Remove highlight after 2 seconds
+      setTimeout(() => footerFollowMe.classList.remove('highlight'), 2000);
+    });
+  </script>
+
+</body>
+</html>
